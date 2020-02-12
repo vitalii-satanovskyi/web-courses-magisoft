@@ -1,0 +1,9 @@
+:-webkit-full-screen body{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+body {
+    font-size: 22px;
+    font-style: italic;
+}
