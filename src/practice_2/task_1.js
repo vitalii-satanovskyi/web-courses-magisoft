@@ -29,3 +29,8 @@ const tree = {
 		}
 	]
 };
+
+// task:
+
+// 1. implement function that recursively walks the tree and calcs sum of its leaf  
+// 2. write tests for this function
