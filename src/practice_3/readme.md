@@ -1,7 +1,7 @@
 
-#Task for practicing app architecture skills#
+# Task for practicing app architecture skills
 
-##Main task##
+## Main task
 
 1. create simple todo list app. 
 2. todo item must have next structure: 
@@ -23,7 +23,7 @@
 App design may be something like https://miro.medium.com/max/800/1*lJ_VieryamJayJNfU4RzOw.png
 But you are free to choose 
 
-##Bonus tasks##
+## Bonus tasks
 
 1. Make app a PWA.
 2. Add filters: 
@@ -33,7 +33,7 @@ But you are free to choose
 3. Add tests for your new functionality;
 
 
-#Task for practicing JS skills#
+# Task for practicing JS skills
 (* -- default, ** -- hard, *** -- very hard)
 
 1. Sort objects by date *
