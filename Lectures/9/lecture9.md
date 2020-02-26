@@ -137,6 +137,8 @@ loadScript('/my/script.js', function(error, script) {
 
 ## Событийный цикл
 
+x
+
 ### Пример для latentflip
 
 Пример для `http://latentflip.com/loupe/?code=!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D`
@@ -144,11 +146,11 @@ loadScript('/my/script.js', function(error, script) {
 ```
 console.log("START");
 
-setTimeout(function timeout() {
+setTimeout(function timeout2seconds() {
     console.log("timer 2 seconds");
 }, 2000);
 
-setTimeout(function timeout() {
+setTimeout(function timeout0seconds() {
     console.log("timer 0 seconds");
 }, 0);
 
@@ -227,7 +229,17 @@ count();
 
 ### Макрозадачи и Микрозадачи
 
-Микрозадачи приходят только из кода. Обычно они создаются промисами: выполнение обработчика .then/catch/finally становится микрозадачей. Микрозадачи также используются «под капотом» await, т.к. это форма обработки промиса.
+Микрозадачи приходят только из кода. Обычно они создаются промисами: выполнение обработчика .then/catch/finally становится микрозадачей.
+
+- **Сразу после каждой макрозадачи движок исполняет все задачи из очереди микрозадач перед тем, как выполнить следующую макрозадачу или отобразить изменения на странице, или сделать что-то ещё.**
+
+- **Все микрозадачи завершаются до обработки каких-либо событий или рендеринга, или перехода к другой макрозадаче.**
+
+---
+
+## Событийный цикл
+
+Какая будет последовательность алертов?
 
 ```
 setTimeout(() => alert("timeout"));
@@ -239,8 +251,6 @@ alert("code");
 ```
 
 ---
-
-## Событийный цикл
 
 ### Решение
 
