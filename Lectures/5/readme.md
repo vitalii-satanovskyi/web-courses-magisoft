@@ -1,0 +1,27 @@
+### Основы JS
+- [Условные операторы](https://learn.javascript.ru/ifelse)
+- [Конструкция "switch"](https://learn.javascript.ru/switch)
+- [Циклы while и for](https://learn.javascript.ru/while-for)
+- [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+- [for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+- [Функции](https://learn.javascript.ru/function-basics#obyavlenie-funktsii)
+- [Function Expression](https://learn.javascript.ru/function-expressions#function-expression-v-sravnenii-s-function-declaration)
+- [Функции-стрелки](https://learn.javascript.ru/arrow-functions-basics)
+- [Работа со строками](https://learn.javascript.ru/string)
+- [Методы массивов](https://learn.javascript.ru/array-methods)
+- [Объекты](https://learn.javascript.ru/object)
+- [Работа с объектами](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [Дата и время](https://learn.javascript.ru/date)
+- [Fetch](https://learn.javascript.ru/fetch)
+- [Формат JSON, метод toJSON](https://learn.javascript.ru/json)
+- [FormData](https://learn.javascript.ru/formdata)
+
+### API
+- [LocalStorage, sessionStorage](https://learn.javascript.ru/localstorage)
+- [Fullscreen API](https://developer.mozilla.org/ru/docs/DOM/Using_fullscreen_mode)
+- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- [ResizeObserver](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver)
+### Test
+- [Тестирование для “чайников”](https://medium.com/@andr.ivas12/%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-c007d43da791)
+- [Автоматические тесты при помощи chai и mocha](https://learn.javascript.ru/testing-mocha)
+- [Jest](https://jestjs.io/docs/ru/getting-started)
