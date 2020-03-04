@@ -7,20 +7,24 @@ export const arr = [
     {
         id: '2',
         isCompleted: false,
-        description: 'Play dotka'
+        description: 'Play dotka gdfgdfgdfgdfgffdg',
+        dueDate: new Date()
     }
 ];
 
 /**
  * filter by predicate
  */
+const DAY_IN_MILLISECONDS = 24 * 3600 * 1000;
 
 // predicates 
 const completed = (o) => o.isCompleted;
+const descLengthMore10 = (o) => o.description > 10;
+const byDate = (o) => new Date().getTime() + DAY_IN_MILLISECONDS < new Date(o.dueDate).getTime()
 
 export const filterArr = (predicate) => (arr) => arr.filter(predicate);
 
-const filterCompleted = filterArr(completed);
+const filterCompleted = filterArr(descLengthMore10);
 
 const res = filterCompleted(arr);
 
@@ -39,7 +43,9 @@ const res = arr.concat(
 // alternative way 
 
 const res = [...arr, newItem];
+const newArr = [...arr];
 
+arr.push(newItem);
 
 /**
  * update item 
@@ -235,6 +241,7 @@ const flatten = (m, tree) => {
 	return m;
 };
 
+
 console.log(flatten([], tree))
 
 
@@ -256,7 +263,7 @@ const items = [
         featureA: 0, 
         featureB: 1, 
         val: 4
-    },s
+    },
     { 
         groupId: 1, 
         featureA: 0, 
